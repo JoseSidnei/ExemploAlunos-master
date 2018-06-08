@@ -51,7 +51,7 @@
             this.TurnoColumn,
             this.IdadeColumn,
             this.CodigoColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 116);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1188, 419);
@@ -95,7 +95,7 @@
             // btnApagar
             // 
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagar.Location = new System.Drawing.Point(12, 42);
+            this.btnApagar.Location = new System.Drawing.Point(272, 42);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(124, 37);
             this.btnApagar.TabIndex = 1;
@@ -106,7 +106,7 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(272, 42);
+            this.btnEditar.Location = new System.Drawing.Point(142, 42);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(124, 37);
             this.btnEditar.TabIndex = 2;
@@ -117,7 +117,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(142, 42);
+            this.btnNovo.Location = new System.Drawing.Point(12, 42);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(124, 37);
             this.btnNovo.TabIndex = 3;

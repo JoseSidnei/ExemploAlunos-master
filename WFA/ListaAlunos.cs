@@ -37,6 +37,7 @@ namespace WFA
                 dataGridView1.Rows.Add(new Object[] {
                     aluno.GetCodigo(),
                     aluno.GetNome(),
+                    aluno.GetIdade(),
                     aluno.GetTurma(),
                     aluno.GetTurno()
                 });
@@ -73,6 +74,7 @@ namespace WFA
                 {
                     Program.alunos.Remove(aluno);
                     PopularListaAlunos();
+                    MessageBox.Show(aluno.GetNome() + "Apagado com sucesso");
                     return;
                 }
             }
