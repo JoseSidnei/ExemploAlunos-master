@@ -18,7 +18,7 @@ namespace WFA
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnNovo_Click(object sender, EventArgs e)
         {
             new CadastroAluno().ShowDialog();
         }
@@ -40,10 +40,37 @@ namespace WFA
 			}  
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Selicione um registro para que seja possivel editar");
+                return;
+            }
+
             int codigo = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
             new CadastroAluno(codigo).ShowDialog();
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Selecione um registro para que seja possivel apagar");
+                return;
+            }
+
+            int codigo = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
+
+            for (int i = 0; i < Program.alunos.Count(); i++)
+            {
+                Aluno aluno = Program.alunos[i];
+                if (aluno.GetCodigo() == codigo)
+                {
+                    Program.alunos.Remove(aluno);
+                    return;
+                }
+            }
         }
     }
 }

@@ -32,11 +32,11 @@
             this.NomeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TurmaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TurnoColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.IdadeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 419);
+            this.dataGridView1.Size = new System.Drawing.Size(1188, 419);
             this.dataGridView1.TabIndex = 0;
             // 
             // NomeColumn
@@ -62,68 +62,77 @@
             this.NomeColumn.HeaderText = "Nome";
             this.NomeColumn.Name = "NomeColumn";
             this.NomeColumn.ReadOnly = true;
+            this.NomeColumn.Width = 350;
             // 
             // TurmaColumn
             // 
             this.TurmaColumn.HeaderText = "Turma";
             this.TurmaColumn.Name = "TurmaColumn";
             this.TurmaColumn.ReadOnly = true;
+            this.TurmaColumn.Width = 200;
             // 
             // TurnoColumn
             // 
             this.TurnoColumn.HeaderText = "Turno";
             this.TurnoColumn.Name = "TurnoColumn";
             this.TurnoColumn.ReadOnly = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(26, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Apagar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(226, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 37);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(123, 23);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 37);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Novo";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.TurnoColumn.Width = 200;
             // 
             // IdadeColumn
             // 
             this.IdadeColumn.HeaderText = "Idade";
             this.IdadeColumn.Name = "IdadeColumn";
             this.IdadeColumn.ReadOnly = true;
+            this.IdadeColumn.Width = 200;
             // 
             // CodigoColumn
             // 
             this.CodigoColumn.HeaderText = "Codigo";
             this.CodigoColumn.Name = "CodigoColumn";
             this.CodigoColumn.ReadOnly = true;
+            this.CodigoColumn.Width = 200;
+            // 
+            // btnApagar
+            // 
+            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Location = new System.Drawing.Point(12, 42);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(124, 37);
+            this.btnApagar.TabIndex = 1;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(272, 42);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(124, 37);
+            this.btnEditar.TabIndex = 2;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(142, 42);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(124, 37);
+            this.btnNovo.TabIndex = 3;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // ListaAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 516);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1212, 608);
+            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListaAlunos";
             this.Text = "ListaAlunos";
@@ -136,9 +145,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.DataGridViewTextBoxColumn NomeColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TurmaColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TurnoColumn;
