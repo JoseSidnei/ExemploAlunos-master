@@ -25,9 +25,14 @@ namespace WFA
 
         private void ListaAlunos_Activated(object sender, EventArgs e)
         {
+            PopularListaAlunos();
+        }
+
+        private void PopularListaAlunos()
+        {
             dataGridView1.Rows.Clear();
             for (int i = 0; i < Program.alunos.Count(); i++)
-			{
+            {
                 Aluno aluno = Program.alunos[i];
                 dataGridView1.Rows.Add(new Object[] {
                     aluno.GetCodigo(),
@@ -36,8 +41,7 @@ namespace WFA
                     aluno.GetTurno()
                 });
 
-
-			}  
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -68,6 +72,7 @@ namespace WFA
                 if (aluno.GetCodigo() == codigo)
                 {
                     Program.alunos.Remove(aluno);
+                    PopularListaAlunos();
                     return;
                 }
             }
