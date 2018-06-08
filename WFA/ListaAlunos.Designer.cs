@@ -135,7 +135,8 @@
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListaAlunos";
-            this.Text = "ListaAlunos";
+            this.Text = "Lista Alunos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.ListaAlunos_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

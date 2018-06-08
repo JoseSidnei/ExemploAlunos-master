@@ -39,13 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTurno = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NotaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.NotaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,11 +141,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NotaColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 231);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 214);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(845, 378);
             this.dataGridView1.TabIndex = 14;
+            // 
+            // NotaColumn
+            // 
+            this.NotaColumn.HeaderText = "Nota";
+            this.NotaColumn.Name = "NotaColumn";
+            this.NotaColumn.ReadOnly = true;
+            this.NotaColumn.Width = 800;
             // 
             // button1
             // 
@@ -162,7 +169,7 @@
             // 
             this.btnAdicionar.Enabled = false;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(476, 186);
+            this.btnAdicionar.Location = new System.Drawing.Point(509, 169);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(124, 39);
             this.btnAdicionar.TabIndex = 16;
@@ -174,7 +181,7 @@
             // 
             this.btnEditar.Enabled = false;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(606, 186);
+            this.btnEditar.Location = new System.Drawing.Point(639, 169);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(124, 39);
             this.btnEditar.TabIndex = 17;
@@ -186,7 +193,7 @@
             // 
             this.btnApagar.Enabled = false;
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagar.Location = new System.Drawing.Point(736, 186);
+            this.btnApagar.Location = new System.Drawing.Point(769, 169);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(124, 39);
             this.btnApagar.TabIndex = 18;
@@ -196,7 +203,7 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(-3, 171);
+            this.label6.Location = new System.Drawing.Point(-1, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(928, 2);
             this.label6.TabIndex = 19;
@@ -208,18 +215,11 @@
             this.label7.AutoSize = true;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 204);
+            this.label7.Location = new System.Drawing.Point(45, 187);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 23);
             this.label7.TabIndex = 20;
             this.label7.Text = "Nota";
-            // 
-            // NotaColumn
-            // 
-            this.NotaColumn.HeaderText = "Nota";
-            this.NotaColumn.Name = "NotaColumn";
-            this.NotaColumn.ReadOnly = true;
-            this.NotaColumn.Width = 800;
             // 
             // CadastroAluno
             // 
@@ -245,7 +245,8 @@
             this.Controls.Add(this.label1);
             this.KeyPreview = true;
             this.Name = "CadastroAluno";
-            this.Text = "Form1";
+            this.Text = "Cadastro Alunos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroAluno_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
