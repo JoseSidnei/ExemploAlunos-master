@@ -14,3 +14,6 @@ C:\Users\104957\Documents\GitHub\BaseProvinha\WFA\obj\Debug\WFA.CadastroAlunoNot
 C:\Users\104895\Documents\Visual Studio 2013\Projects\ExemploAlunos-master\WFA\bin\Debug\WFA.exe.config
 C:\Users\104895\Documents\Visual Studio 2013\Projects\ExemploAlunos-master\WFA\obj\Debug\WFA.exe
 C:\Users\104895\Documents\Visual Studio 2013\Projects\ExemploAlunos-master\WFA\obj\Debug\WFA.pdb
+C:\Users\104895\Documents\GitHub\ExemploAlunos-master\WFA\bin\Debug\WFA.exe.config
+C:\Users\104895\Documents\GitHub\ExemploAlunos-master\WFA\obj\Debug\WFA.exe
+C:\Users\104895\Documents\GitHub\ExemploAlunos-master\WFA\obj\Debug\WFA.pdb
