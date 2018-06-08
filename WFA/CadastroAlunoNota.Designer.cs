@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 57);
+            this.label1.Location = new System.Drawing.Point(12, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
@@ -47,18 +47,18 @@
             // txtNota
             // 
             this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNota.Location = new System.Drawing.Point(57, 57);
+            this.txtNota.Location = new System.Drawing.Point(59, 57);
             this.txtNota.Name = "txtNota";
-            this.txtNota.Size = new System.Drawing.Size(236, 22);
+            this.txtNota.Size = new System.Drawing.Size(326, 22);
             this.txtNota.TabIndex = 1;
             this.txtNota.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNota_KeyDown);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(141, 102);
+            this.button1.Location = new System.Drawing.Point(163, 109);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.Size = new System.Drawing.Size(108, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(263, 102);
+            this.btnCadastrar.Location = new System.Drawing.Point(277, 109);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(97, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(108, 37);
             this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "Cadastar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
